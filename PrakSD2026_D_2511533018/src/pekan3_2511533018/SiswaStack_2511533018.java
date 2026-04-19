@@ -43,7 +43,7 @@ public class SiswaStack_2511533018
 	
 	public void tampilkanSiswa_2511533018()
 	{
-		for (int i = stack_3018.size() - 1; i >= 0; i-- )
+		for (int i = stack_3018.size() - 1; i >= 0; i--)
 			System.out.println(stack_3018.get(i));
 	}
 	
