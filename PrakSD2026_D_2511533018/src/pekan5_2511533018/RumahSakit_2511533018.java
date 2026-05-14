@@ -6,59 +6,77 @@ public class RumahSakit_2511533018
     private Pasien_2511533018 head_3018 = null;
     private int counter_3018 = 0; 
 
-    public void daftarPasien_2511533018(String nama, String keluhan) {
+    public void daftarPasien_2511533018(String nama, String keluhan) 
+    {
         counter_3018++;
         Pasien_2511533018 baru_3018 = new Pasien_2511533018(nama, keluhan, counter_3018);
         
-        if (head_3018 == null) {
+        if (head_3018 == null) 
+        {
             head_3018 = baru_3018;
-        } else {
+        } else 
+        {
             Pasien_2511533018 temp_3018 = head_3018;
-            while (temp_3018.next_3018 != null) {
+            while (temp_3018.next_3018 != null) 
+            {
                 temp_3018 = temp_3018.next_3018;
             }
             temp_3018.next_3018 = baru_3018;
         }
+        
         System.out.println("Pasien berhasil didaftarkan, No Antrian: " + counter_3018);
     }
 
-    public void panggilPasien_2511533018() {
-        if (head_3018 == null) {
+    public void panggilPasien_2511533018() 
+    {
+        if (head_3018 == null) 
+        {
             System.out.println("Antrian kosong!");
             return;
         }
+        
         System.out.println("Memanggil Pasien: " + head_3018.getNama_3018() + " [No: " + head_3018.getNomor_3018() + "]");
         head_3018 = head_3018.next_3018; 
     }
 
-    public void tampilkanAntrian_2511533018() {
-        if (head_3018 == null) {
+    public void tampilkanAntrian_2511533018() 
+    {
+        if (head_3018 == null) 
+        {
             System.out.println("Tidak ada antrian.");
             return;
         }
         Pasien_2511533018 curr_3018 = head_3018;
         System.out.println("=== Daftar Antrian ===");
-        while (curr_3018 != null) {
+        
+        while (curr_3018 != null) 
+        {
             System.out.println(curr_3018.getNomor_3018() + ". " + curr_3018.getNama_3018() + " (" + curr_3018.getPenyakit_3018() + ")");
             curr_3018 = curr_3018.next_3018;
         }
     }
 
-    public void cariPasien_2511533018(String namaCari) {
+    public void cariPasien_2511533018(String namaCari) 
+    {
         Pasien_2511533018 curr_3018 = head_3018;
         boolean ketemu_3018 = false;
-        while (curr_3018 != null) {
-            if (curr_3018.getNama_3018().equalsIgnoreCase(namaCari)) {
+        
+        while (curr_3018 != null) 
+        {
+            if (curr_3018.getNama_3018().equalsIgnoreCase(namaCari)) 
+            {
                 System.out.println("Pasien ditemukan, No Antrian: " + curr_3018.getNomor_3018());
                 ketemu_3018 = true;
                 break;
             }
             curr_3018 = curr_3018.next_3018;
         }
+        
         if (!ketemu_3018) System.out.println("Data pasien tidak ditemukan.");
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) 
+    {
         RumahSakit_2511533018 rs_3018 = new RumahSakit_2511533018();
         Scanner sc_3018 = new Scanner(System.in);
         int pilihan_3018;
