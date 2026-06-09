@@ -63,19 +63,19 @@ public class QuickSort_2511533018 {
         for (int i_3018 = Angka.NOL; i_3018 < arr_3018.length; ++i_3018) {
             System.out.println(arr_3018[i_3018] + Pesan.ONE_SPACE);
         }
-        Utils.printEmpty();
+        Utils.printLineStatement();
     }
 
     public static void main(String[] args) {
         int[] arr_3018 = { 10, 7, 8, 9, 1, 5 };
         int n_3018 = Utils.hitungPanjangArray(arr_3018);
 
-        Utils.printString(Pesan.SEBELUM_TERURUT);
+        Utils.printLineStatement(Pesan.SEBELUM_TERURUT);
         Utils.printArray(arr_3018);
 
         quickSort_2511533018(arr_3018, Angka.NOL, n_3018 - Angka.SATU);
 
-        Utils.printString(Pesan.SESUDAH_TERURUT);
+        Utils.printLineStatement(Pesan.SESUDAH_TERURUT);
         Utils.printArray(arr_3018);
     }
 }

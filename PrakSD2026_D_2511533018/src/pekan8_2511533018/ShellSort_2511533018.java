@@ -29,12 +29,12 @@ public class ShellSort_2511533018 {
     public static void main(String[] args) {
         int[] data_3018 = { 3, 10, 4, 6, 8, 9, 7, 2, 1, 5 };
 
-        Utils.printString(Pesan.SEBELUM_TERURUT);
+        Utils.printLineStatement(Pesan.SEBELUM_TERURUT);
         Utils.printArray(data_3018);
 
         shellSort_2511533018(data_3018);
 
-        Utils.printString(Pesan.SESUDAH_TERURUT);
+        Utils.printLineStatement(Pesan.SESUDAH_TERURUT);
         Utils.printArray((data_3018));
     }
 }

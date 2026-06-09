@@ -62,11 +62,11 @@ public class MergeSort_2511533018 {
     public static void main(String[] args) {
         int[] arr_3018 = { 12, 11, 13, 5, 6, 7 };
 
-        Utils.printString(Pesan.SEBELUM_TERURUT);
+        Utils.printLineStatement(Pesan.SEBELUM_TERURUT);
         Utils.printArray(arr_3018);
 
         sort_2511533018(arr_3018, Angka.NOL, arr_3018.length - Angka.SATU);
-        Utils.printString(Pesan.SESUDAH_TERURUT);
+        Utils.printLineStatement(Pesan.SESUDAH_TERURUT);
         Utils.printArray(arr_3018);
     }
 }

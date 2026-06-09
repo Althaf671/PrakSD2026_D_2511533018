@@ -12,19 +12,19 @@ public class Utils {
         System.out.println();
     }
 
-    public static void printString(String statement) {
+    public static void printLineStatement(String statement) {
         System.out.println(statement);
     }
 
-    public static void printEmpty() {
-        System.out.println();
+    public static void printLineStatement() {
+        printLineStatement("");
     }
 
-    public static  void printInt(int val) {
-        System.out.println(val);
-    }
+    public static  void printLineStatement(int val) { System.out.println(val); }
 
     public static int hitungPanjangArray(int[] arr) {
         return arr.length;
     }
+
+    public static void printStatement(String statement) { System.out.print(statement); }
 }
